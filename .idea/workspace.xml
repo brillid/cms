@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d041403e-d98b-4790-a5d3-713b27b38a62" name="Changes" comment="first local">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/bootstrap-rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/bootstrap-rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/plugins/morris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/sb-admin-rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/css/sb-admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/spinning.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_spinning.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/flot/flot-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/flot/jquery.flot.tooltip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/morris/morris-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/morris/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/morris/morris.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/js/plugins/morris/raphael.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blog-home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/blog-post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0" />
+  <component name="ProjectId" id="1y6U4yvanluxBfUdU7RJ6TB0KcB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d041403e-d98b-4790-a5d3-713b27b38a62" name="Changes" comment="" />
+      <created>1631571346061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631571346061</updated>
+      <workItem from="1631571347879" duration="372000" />
+      <workItem from="1631571934201" duration="2752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="first local" />
+    <option name="LAST_COMMIT_MESSAGE" value="first local" />
+  </component>
+</project>
