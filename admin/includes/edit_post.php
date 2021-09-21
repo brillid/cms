@@ -1,6 +1,5 @@
 <?php
 
-
     if (isset($_GET['p_id'])) {
 
         $the_post_id = $_GET['p_id'];
@@ -36,8 +35,27 @@
     </div>
 
     <div class="form-group">
-        <label for="post_category">Post Category Id</label>
-        <input value="<?php echo $post_category_id; ?>" type="text" class="form-control" name="post_category_id">
+        <select name="post_category" id="">
+
+            <?php
+
+            $query = "SELECT * FROM categories";
+
+            $select_categories = mysqli_query($connection, $query);
+
+            confirmQuery($select_categories);
+
+            while ($row = mysqli_fetch_assoc($select_categories)) {
+                $cat_id = $row['cat_id'];
+                $cat_title = $row['cat_title'];
+
+                echo "<option value='$cat_id'>$cat_title</option>";
+
+            }
+
+            ?>
+
+        </select>
     </div>
 
     <div class="form-group">
@@ -51,8 +69,7 @@
     </div>
 
     <div class="form-group">
-        <label for="post_image">Post Image</label>
-        <input type="file" name="image">
+        <img width="300" src="../images/<?php echo $post_image; ?>">
     </div>
 
     <div class="form-group">
