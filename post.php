@@ -49,12 +49,12 @@
                 <hr>
                 <img class="img-responsive" src="images/<?php echo $post_image; ?>" alt="">
                 <hr>
-                <p><?php echo $post_content; ?></p>
+                <p><?php echo $post_content ?></p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 <hr>
 
-            <?php } ?>
+            <?php }  ?>
 
 
             <!-- Blog Comments -->
@@ -90,7 +90,7 @@
             <!-- Comments Form -->
             <div class="well">
                 <h4>Leave a Comment:</h4>
-                <form action="#" method="post" role="form">
+                <form action="" method="post" role="form">
                     <div class="form-group">
                         <label for="Author">Author</label>
                         <input type="text" class="form-control" name="comment_author">
@@ -98,7 +98,7 @@
                     <div class="form-group">
                         <label for="Email">Email</label>
                         <input type="email" class="form-control" name="comment_email">
-                    </div
+                    </div>
                     <div class="form-group">
                         <label for="Comment">Comment</label>
                         <textarea name="comment_content" class="form-control" rows="3"></textarea>
@@ -109,11 +109,9 @@
 
             <hr>
 
-
-
             <?php
 
-            $query = "SELECT * FROM comments WHERE comment_post_id = {$the_post_id} ";
+            $query = "SELECT * FROM comments WHERE comment_post_id = $the_post_id ";
             $query .= "AND comment_status = 'approved' ";
             $query .= "ORDER BY comment_id DESC ";
 
@@ -133,7 +131,6 @@
 
                     ?>
 
-
                     <!-- Comment -->
             <div class="media">
                 <a class="pull-left" href="#">
@@ -147,14 +144,14 @@
                 </div>
             </div>
 
-
                <?php } ?>
 
-
         </div>
+        <!-- /.col-md-8 -->
 
         <!-- Blog Sidebar Widgets Column -->
         <?php include "includes/sidebar.php"; ?>
+
 
     </div>
     <!-- /.row -->
@@ -163,3 +160,4 @@
 
     <!-- Footer -->
     <?php include "includes/footer.php"; ?>
+
