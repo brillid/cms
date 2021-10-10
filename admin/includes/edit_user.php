@@ -21,8 +21,6 @@ if (isset($_GET['edit_user'])) {
 
     }
 
-
-
 }
 
 if (isset($_POST['edit_user'])) {
@@ -86,8 +84,6 @@ if (isset($_POST['edit_user'])) {
             }
 
             ?>
-
-
 
         </select>
     </div>
