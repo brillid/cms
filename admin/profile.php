@@ -4,7 +4,24 @@
 
 if (isset($_SESSION['username'])) {
 
+    $username = $_SESSION['username'];
 
+    $query = "SELECT * FROM users WHERE username = '$username' ";
+
+    $select_user_profile_query = mysqli_query($connection, $query);
+
+    while ($row = mysqli_fetch_array($select_user_profile_query)) {
+
+        $user_id = $row['user_id'];
+        $username = $row['username'];
+        $user_password = $row['user_password'];
+        $user_firstname = $row['user_firstname'];
+        $user_lastname = $row['user_lastname'];
+        $user_email = $row['user_email'];
+        $user_image = $row['user_image'];
+        $user_role = $row['user_role'];
+
+    }
 
 }
 
@@ -29,26 +46,28 @@ if (isset($_SESSION['username'])) {
 
                     <form action="" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="title">Post Title</label>
-                            <input value="<?php echo $post_title; ?>" type="text" class="form-control" name="post_title">
+                            <label for="title">Firstname</label>
+                            <input type="text" value="<?php echo $user_firstname ?>" class="form-control" name="user_firstname">
                         </div>
 
                         <div class="form-group">
-                            <select name="post_category" id="">
+                            <label for="post_status">Lastname</label>
+                            <input type="text" value="<?php echo $user_lastname ?>" class="form-control" name="user_lastname">
+                        </div>
+
+                        <div class="form-group">
+                            <select name="user_role" id="">
+                                <option value="subscriber"><?php echo $user_role; ?></option>
 
                                 <?php
 
-                                $query = "SELECT * FROM categories";
+                                if ($user_role == 'admin') {
 
-                                $select_categories = mysqli_query($connection, $query);
+                                    echo "<option value='subscriber'>subscriber</option>";
 
-                                confirmQuery($select_categories);
+                                } else {
 
-                                while ($row = mysqli_fetch_assoc($select_categories)) {
-                                    $cat_id = $row['cat_id'];
-                                    $cat_title = $row['cat_title'];
-
-                                    echo "<option value='$cat_id'>$cat_title</option>";
+                                    echo "<option value='admin'>admin</option>";
 
                                 }
 
@@ -57,33 +76,28 @@ if (isset($_SESSION['username'])) {
                             </select>
                         </div>
 
-                        <div class="form-group">
-                            <label for="title">Post Author</label>
-                            <input value="<?php echo $post_author; ?>" type="text" class="form-control" name="post_author">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="post_status">Post Status</label>
-                            <input value="<?php echo $post_status; ?>" type="text" class="form-control" name="post_status">
-                        </div>
-
-                        <div class="form-group">
-                            <img width="300" src="../images/<?php echo $post_image; ?>">
+                        <!--<div class="form-group">
+                            <label for="post_image">Post Image</label>
                             <input type="file" name="image">
+                        </div>-->
+
+                        <div class="form-group">
+                            <label for="post_tags">Username</label>
+                            <input type="text" value="<?php echo $username ?>" class="form-control" name="username">
                         </div>
 
                         <div class="form-group">
-                            <label for="post_tags">Post Tags</label>
-                            <input value="<?php echo $post_tags; ?>" type="text" class="form-control" name="post_tags">
+                            <label for="post_content">Email</label>
+                            <input type="email" value="<?php echo $user_email ?>" class="form-control" name="user_email">
                         </div>
 
                         <div class="form-group">
-                            <label for="post_content">Post Content</label>
-                            <textarea class="form-control" name="post_content" id="" cols="30" rows="10"><?php echo $post_content; ?></textarea>
+                            <label for="post_content">Password</label>
+                            <input type="password" value="<?php echo $user_password ?>" class="form-control" name="user_password">
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" name="update_post" value="Update Post">
+                            <input type="submit" class="btn btn-primary" name="edit_user" value="Update Profile">
                         </div>
                     </form>
 
