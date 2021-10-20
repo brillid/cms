@@ -66,7 +66,7 @@
 
         confirmQuery($update_post);
 
-        echo "<p class='bg-success'>Post Updated. <a href='../posts.php?p_id=$the_post_id'>View Post</a></p>";
+        echo "<p class='bg-success'>Post Updated. <a href='../post.php?p_id=$the_post_id'>View Post</a></p>";
 
     }
 
