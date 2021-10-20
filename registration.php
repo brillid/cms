@@ -22,6 +22,12 @@ if (!$select_randsalt_query) {
 
 }
 
+while ($row = mysqli_fetch_array($select_randsalt_query)) {
+
+
+
+}
+
 }
 
 ?>
