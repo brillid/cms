@@ -1,5 +1,6 @@
 <?php include "includes/header.php"; ?>
 <?php include "includes/db.php"; ?>
+<?php include "admin/functions.php"; ?>
 
 <!-- Navigation -->
 <?php include "includes/navigation.php"; ?>
@@ -18,7 +19,10 @@
 
                 $the_post_id = $_GET['p_id'];
 
-            }
+            $view_query = "UPDATE posts SET post_views_count = post_views_count + 1 WHERE post_id = $the_post_id ";
+            $sent_query = mysqli_query($connection, $view_query);
+
+            confirmQuery($sent_query);
 
             $query = "SELECT * FROM posts WHERE post_id = $the_post_id ";
 
@@ -53,7 +57,20 @@
 
                 <hr>
 
-            <?php }  ?>
+            <?php }
+
+
+
+            } else {
+
+                header("location: index.php");
+
+            }
+
+
+
+
+            ?>
 
 
             <!-- Blog Comments -->
