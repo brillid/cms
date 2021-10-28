@@ -16,6 +16,8 @@
                             Welcome to admin
                             <small><?php echo $_SESSION['username']; ?></small>
                         </h1>
+
+                        <h1><?php echo $count_user; ?></h1>
                     </div>
                 </div>
                 <!-- /.row -->
