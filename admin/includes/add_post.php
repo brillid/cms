@@ -39,6 +39,7 @@ if (isset($_POST['create_post'])) {
     </div>
 
     <div class="form-group">
+        <label for="category">Category</label>
         <select name="post_category" id="">
 
             <?php
@@ -62,9 +63,29 @@ if (isset($_POST['create_post'])) {
         </select>
     </div>
 
+    <?php
+
+    if ($_SESSION['username']) {
+
+        $username = $_SESSION['username'];
+
+    }
+
+    $users_query = "SELECT * FROM users WHERE username = '$username'";
+
+    $select_user = mysqli_query($connection, $users_query);
+
+    confirmQuery($select_user);
+
+    $row = mysqli_fetch_array($select_user);
+
+    $post_user = $row['username'];
+
+    ?>
+
     <div class="form-group">
-        <label for="title">Post Author</label>
-        <input type="text" class="form-control" name="author">
+        <label for="users">Post User</label>
+        <input type="text" class="form-control" readonly='readonly' value="<?php echo $post_user; ?>" name="author">
     </div>
 
     <div class="form-group">
