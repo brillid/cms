@@ -13,7 +13,7 @@
     while ($row = mysqli_fetch_assoc($select_posts_by_id)) {
 
         $post_id = $row['post_id'];
-        $post_author = $row['post_author'];
+        $post_user = $row['post_user'];
         $post_title = $row['post_title'];
         $post_category_id = $row['post_category_id'];
         $post_status = $row['post_status'];
@@ -27,7 +27,7 @@
 
     if (isset($_POST['update_post']))
     {
-        $post_author = $_POST['post_author'];
+        $post_user = $_POST['post_user'];
         $post_title = $_POST['post_title'];
         $post_category_id = $_POST['post_category'];
         $post_status = $_POST['post_status'];
@@ -55,7 +55,7 @@
         $query .= "post_title = '$post_title', ";
         $query .= "post_category_id = '$post_category_id', ";
         $query .= "post_date = now(), ";
-        $query .= "post_author = '$post_author', ";
+        $query .= "post_user = '$post_user', ";
         $query .= "post_status = '$post_status', ";
         $query .= "post_tags = '$post_tags', ";
         $query .= "post_content = '$post_content', ";
@@ -80,6 +80,7 @@
     </div>
 
     <div class="form-group">
+        <label for="category">Category</label>
         <select name="post_category" id="">
 
             <?php
@@ -103,13 +104,34 @@
         </select>
     </div>
 
+    <?php
+
+    if ($_SESSION['username']) {
+
+        $username = $_SESSION['username'];
+
+    }
+
+    $users_query = "SELECT * FROM users WHERE username = '$username'";
+
+    $select_user = mysqli_query($connection, $users_query);
+
+    confirmQuery($select_user);
+
+    $row = mysqli_fetch_array($select_user);
+
+    $post_user = $row['username'];
+
+    ?>
+
     <div class="form-group">
-        <label for="title">Post Author</label>
-        <input value="<?php echo $post_author; ?>" type="text" class="form-control" name="post_author">
+        <label for="users">Post User</label>
+        <input type="text" class="form-control" readonly='readonly' value="<?php echo $post_user; ?>" name="post_user">
     </div>
 
 
     <div class="form-group">
+        <label for="post_status">Post Status</label>
     <select name="post_status" id="">
 
         <option value='<?php echo $post_status; ?>'><?php echo $post_status; ?></option>
@@ -132,6 +154,7 @@
     </div>
 
     <div class="form-group">
+        <label for="post_image">Post Image</label>
         <img width="300" src="../images/<?php echo $post_image; ?>">
         <input type="file" name="image">
     </div>
@@ -143,7 +166,7 @@
 
     <div class="form-group">
         <label for="post_content">Post Content</label>
-        <textarea class="form-control" name="post_content" id="" cols="30" rows="10"><?php echo $post_content; ?></textarea>
+        <textarea class="form-control" name="post_content" id="summernote" cols="30" rows="10"><?php echo $post_content; ?></textarea>
     </div>
 
     <div class="form-group">
