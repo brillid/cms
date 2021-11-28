@@ -69,17 +69,17 @@ if (isset($_POST['create_post'])) {
 
         $username = $_SESSION['username'];
 
+        $users_query = "SELECT * FROM users WHERE username = '$username'";
+
+        $select_user = mysqli_query($connection, $users_query);
+
+        confirmQuery($select_user);
+
+        $row = mysqli_fetch_array($select_user);
+
+        $post_user = $row['username'];
+
     }
-
-    $users_query = "SELECT * FROM users WHERE username = '$username'";
-
-    $select_user = mysqli_query($connection, $users_query);
-
-    confirmQuery($select_user);
-
-    $row = mysqli_fetch_array($select_user);
-
-    $post_user = $row['username'];
 
     ?>
 
